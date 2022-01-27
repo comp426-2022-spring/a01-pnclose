@@ -16,7 +16,7 @@ console.log(argv);
 argv['port']
 
 // WHY: We set the port in argv to be 3000
-const port = argv['port'] || 3000
+const port = args.port || process.env.PORT || 3000
 // const port = argv['port'] || process.env.PORT || 3000
 
 
