@@ -11,6 +11,16 @@
     "type": "git",
     "url": "git+https://github.com/comp426-2022-spring/a01-pnclose.git"
   },
+  "keywords": [
+    "web",
+    "server",
+    "port",
+    "node",
+    "fs",
+    "args",
+    "htp"
+  ],
+  
   "author": "pnclose",
   "license": "GPL-3.0-or-later",
   "bugs": {

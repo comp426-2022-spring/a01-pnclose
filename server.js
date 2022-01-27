@@ -7,13 +7,13 @@ const fs = require('fs')
 
 // WHY: To process one argument `--port=` on the command line after `node server.js`
 // WHAT IS argv: Returns an argument object argv populated with the array arguments from args
-const argv = require('minimist')(process.argv.slice(2))
-console.log(argv);
+const args = require('minimist')(process.argv.slice(2))
+console.log(args);
 
 
 
 // Define allowed argument name 'port'.
-argv['port']
+args['port']
 
 // WHY: We set the port in argv to be 3000
 const port = args.port || process.env.PORT || 3000
