@@ -8,7 +8,7 @@ const fs = require('fs')
 // WHY: To process one argument `--port=` on the command line after `node server.js`
 // WHAT IS argv: Returns an argument object argv populated with the array arguments from args
 const args = require('minimist')(process.argv.slice(2))
-console.log(args);
+//console.log(args);
 
 
 
@@ -25,7 +25,8 @@ const port = args.port || process.env.PORT || 3000
 fs.readFile('./www/index.html', 'utf8', (err, data) => {
     if (err) {
         console.error(err)
-        return process.exit(1)
+        return 
+        process.exit(1)
     }
 
     // create the server, and set the 3 things
